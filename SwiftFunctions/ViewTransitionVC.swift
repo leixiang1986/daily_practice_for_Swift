@@ -30,6 +30,14 @@ class ViewTransitionVC: UIViewController {
         view.backgroundColor = .white
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(secondTransitionVC))
         
+        let button = UIButton(type: .custom)
+        button.frame = CGRect(x: 100, y: 400, width: 100, height: 40)
+        button.backgroundColor = .yellow
+        button.alpha = 0.5
+        button.setTitle("完成", for: .normal)
+        view.addSubview(button)
+        view.backgroundColor = .gray
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

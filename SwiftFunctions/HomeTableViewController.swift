@@ -49,6 +49,8 @@ class HomeTableViewController: UITableViewController {
         titles.append("自定义tableView事件--左滑和选中背景")
         titles.append("view 转场动画")
         titles.append("UICollectionView 流水布局")
+        titles.append("系统分享")
+        titles.append("3D变换")
     }
     ///知识点 是否隐藏状态栏,对非留海屏有效
     ///调用setNeedsStatusBarAppearanceUpdate会重新更新
@@ -87,6 +89,15 @@ class HomeTableViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         } else if title == "UICollectionView 流水布局" {
             let vc = CollectionViewFlowLayoutVC()
+            navigationController?.pushViewController(vc, animated: true)
+        } else if title == "系统分享" {
+            let image = UIImage(named: "image0")!
+           let vc = UIActivityViewController(activityItems: [image,
+            "内容"], applicationActivities: nil)
+            present(vc, animated: true, completion: nil)
+            
+        } else if title == "3D变换" {
+            let vc = Transform3DViewController()
             navigationController?.pushViewController(vc, animated: true)
         } else {
 //            知识点 强制调用 prefersStatusBarHidden更新状态
@@ -161,7 +172,9 @@ class HomeTableViewController: UITableViewController {
         
     }
     
-    
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        print("开始摇一摇")
+    }
     
 
     /*

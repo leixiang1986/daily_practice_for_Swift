@@ -18,6 +18,7 @@
 		04646CD52590A0EA007FFED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04646CD32590A0EA007FFED3 /* LaunchScreen.storyboard */; };
 		04646CDE2590A107007FFED3 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04646CDD2590A107007FFED3 /* HomeTableViewController.swift */; };
 		04646CE22590ADDD007FFED3 /* ViewTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04646CE12590ADDD007FFED3 /* ViewTransitionVC.swift */; };
+		0467BFF7259B29D70099A414 /* Transform3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467BFF6259B29D70099A414 /* Transform3DViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		04646CD62590A0EA007FFED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04646CDD2590A107007FFED3 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		04646CE12590ADDD007FFED3 /* ViewTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransitionVC.swift; sourceTree = "<group>"; };
+		0467BFF6259B29D70099A414 /* Transform3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform3DViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				046257192592D5DC00428DA5 /* SecondViewTransitionVC.swift */,
 				04625720259324EF00428DA5 /* CollectionViewFlowLayoutVC.swift */,
 				0462572B259342E500428DA5 /* BasicCollectionViewController.swift */,
+				0467BFF6259B29D70099A414 /* Transform3DViewController.swift */,
 				045E37E72595D72E0003A4A9 /* UIView+Extension.swift */,
 				04646CCE2590A0E7007FFED3 /* Main.storyboard */,
 				04646CD12590A0EA007FFED3 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04646CE22590ADDD007FFED3 /* ViewTransitionVC.swift in Sources */,
+				0467BFF7259B29D70099A414 /* Transform3DViewController.swift in Sources */,
 				0462571A2592D5DC00428DA5 /* SecondViewTransitionVC.swift in Sources */,
 				045E37E82595D72E0003A4A9 /* UIView+Extension.swift in Sources */,
 				04646CDE2590A107007FFED3 /* HomeTableViewController.swift in Sources */,
