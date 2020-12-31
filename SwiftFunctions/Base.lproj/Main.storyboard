@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,10 +55,105 @@
             </objects>
             <point key="canvasLocation" x="674" y="64"/>
         </scene>
+        <!--Transform3D CubeVC-->
+        <scene sceneID="heu-cJ-pzr">
+            <objects>
+                <viewController storyboardIdentifier="Transform3DCubeVC" id="niw-Or-mIl" customClass="Transform3DCubeVC" customModule="SwiftFunctions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u0L-er-9Nz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3g-TW-ShN">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AgB-kI-XbK"/>
+                                    <constraint firstAttribute="height" constant="200" id="FhE-LP-5cT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cnk-Ie-CFn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x3g-TW-ShN" firstAttribute="centerY" secondItem="u0L-er-9Nz" secondAttribute="centerY" id="goW-iI-yvi"/>
+                            <constraint firstItem="x3g-TW-ShN" firstAttribute="centerX" secondItem="u0L-er-9Nz" secondAttribute="centerX" id="xVd-WU-2zb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="x3g-TW-ShN" id="Oag-qR-DKj"/>
+                        <outletCollection property="faces" destination="ift-7M-0BX" collectionClass="NSMutableArray" id="ECe-m2-6t5"/>
+                        <outletCollection property="faces" destination="vQc-e8-ThR" collectionClass="NSMutableArray" id="bVy-iv-pGk"/>
+                        <outletCollection property="faces" destination="9b7-VQ-Kh9" collectionClass="NSMutableArray" id="WMK-Tp-gmX"/>
+                        <outletCollection property="faces" destination="NZg-Gs-MFj" collectionClass="NSMutableArray" id="2Z8-6L-LcO"/>
+                        <outletCollection property="faces" destination="ACc-mu-Suz" collectionClass="NSMutableArray" id="FSu-FL-FI3"/>
+                        <outletCollection property="faces" destination="aH3-y5-SW4" collectionClass="NSMutableArray" id="e3B-zL-8QW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaH-Qk-i7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="ift-7M-0BX" userLabel="View0">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="FKe-Hw-NNw"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="vQc-e8-ThR" userLabel="View1">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="BFB-d9-JaR"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="9b7-VQ-Kh9" userLabel="View2">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="ZUo-ft-dXv"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="NZg-Gs-MFj" userLabel="View3">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="ugf-4W-Tji"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="ACc-mu-Suz" userLabel="View4">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="565-Uq-R1Y"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                </view>
+                <view contentMode="scaleToFill" id="aH3-y5-SW4" userLabel="View5">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="oRZ-FI-kf0"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1462.3188405797102" y="76.339285714285708"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

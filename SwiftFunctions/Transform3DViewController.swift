@@ -18,6 +18,8 @@ class Transform3DViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "点击变换后，两个view展示出同一个灭点"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "立方体", style: .plain, target: self, action: #selector(pushToCube))
         view.backgroundColor = .white
         imageView0 = createImageView(frame: CGRect(x: 0, y: 0, width: 150, height: 150))
         imageView1 = createImageView(frame: CGRect(x: 250, y: 0, width: 150, height: 150))
@@ -28,6 +30,14 @@ class Transform3DViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @objc
+    func pushToCube() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "Transform3DCubeVC")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func createImageView(frame:CGRect) -> UIImageView {
         let image = UIImage(named: "image0")
         let  imageView = UIImageView(image: image)
@@ -36,9 +46,6 @@ class Transform3DViewController: UIViewController {
         return imageView
     }
     
-    
-    
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if CATransform3DEqualToTransform(imageView0.transform3D, CATransform3DIdentity) {
@@ -46,9 +53,11 @@ class Transform3DViewController: UIViewController {
             transform3D.m34 = -1.0 / 500.0
             ///知识点：layer的sublayerTransform属性设置了子view或子layer的共同变换，可以共用一个灭点
             containerView.layer.sublayerTransform = transform3D
+            ///设置isDoubleSided这个为false那么旋转180度就看不到图像了
+//            self.imageView0.layer.isDoubleSided = false
             UIView.animate(withDuration: 0.5) {[unowned self] in
                 
-                transform3D = CATransform3DMakeRotation(CGFloat(Double.pi / 4), 0, 1, 0)
+                transform3D = CATransform3DMakeRotation(CGFloat(Double.pi / 4 ), 0, 1, 0)
                 self.imageView0.transform3D = transform3D
                 transform3D = CATransform3DMakeRotation(-CGFloat(Double.pi / 4), 0, 1, 0)
                 self.imageView1.transform3D = transform3D

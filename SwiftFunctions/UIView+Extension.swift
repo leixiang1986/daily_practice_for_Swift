@@ -24,4 +24,13 @@ extension UIView {
         
     }
     
+    var center:CGPoint {
+        get {
+            return CGPoint(x: frame.origin.x + frame.width * 0.5, y: frame.origin.y + frame.height * 0.5)
+        }
+        set {
+            self.frame = CGRect(x: newValue.x - frame.width * 0.5, y: frame.height * 0.5, width: frame.width, height: frame.height)
+        }
+    }
+    
 }
