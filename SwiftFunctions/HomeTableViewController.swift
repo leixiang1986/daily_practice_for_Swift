@@ -50,12 +50,11 @@ class HomeTableViewController: UITableViewController {
         titles.append("view 转场动画")
         titles.append("UICollectionView 流水布局")
         titles.append("系统分享")
-        titles.append("3D变换")
+        titles.append("CALayer相关")
     }
     ///知识点 是否隐藏状态栏,对非留海屏有效
     ///调用setNeedsStatusBarAppearanceUpdate会重新更新
 //    override var prefersStatusBarHidden: Bool {
-//
 //        return true
 //    }
 
@@ -68,7 +67,6 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -95,9 +93,8 @@ class HomeTableViewController: UITableViewController {
            let vc = UIActivityViewController(activityItems: [image,
             "内容"], applicationActivities: nil)
             present(vc, animated: true, completion: nil)
-            
-        } else if title == "3D变换" {
-            let vc = Transform3DViewController()
+        } else if title == "CALayer相关" {
+            let vc = LayerAboutViewController()
             navigationController?.pushViewController(vc, animated: true)
         } else {
 //            知识点 强制调用 prefersStatusBarHidden更新状态

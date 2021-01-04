@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		045E37E82595D72E0003A4A9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E37E72595D72E0003A4A9 /* UIView+Extension.swift */; };
+		045F377E25A2AA8F007BD29C /* KeyFrameAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F377D25A2AA8F007BD29C /* KeyFrameAnimationVC.swift */; };
+		045F378125A2BBB8007BD29C /* KeyFrameAnimPathVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F378025A2BBB8007BD29C /* KeyFrameAnimPathVC.swift */; };
+		045F378425A2E664007BD29C /* VirtualPropertyAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F378325A2E664007BD29C /* VirtualPropertyAnimationVC.swift */; };
+		045F378725A2F4BC007BD29C /* GroupAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F378625A2F4BC007BD29C /* GroupAnimationVC.swift */; };
+		045F378A25A2FBF5007BD29C /* TransitionAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045F378925A2FBF5007BD29C /* TransitionAnimationVC.swift */; };
 		04618797259C16810017C530 /* Transform3DCubeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04618796259C16810017C530 /* Transform3DCubeVC.swift */; };
 		0461879A259C55280017C530 /* ReplicatorLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04618799259C55280017C530 /* ReplicatorLayerVC.swift */; };
 		0461879D259C71DD0017C530 /* DefaultAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461879C259C71DD0017C530 /* DefaultAnimationVC.swift */; };
@@ -15,6 +20,8 @@
 		046245C3259D6A4100A5F98D /* PresentionLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046245C2259D6A4100A5F98D /* PresentionLayerViewController.swift */; };
 		046245C6259D784F00A5F98D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046245C5259D784F00A5F98D /* UIColor+Extension.swift */; };
 		046245CD259D7F5E00A5F98D /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046245CC259D7F5E00A5F98D /* CALayer+Extension.swift */; };
+		046245D0259DC1A000A5F98D /* LayerAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046245CF259DC1A000A5F98D /* LayerAboutViewController.swift */; };
+		046245D4259DCAA200A5F98D /* Animation1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046245D3259DCAA200A5F98D /* Animation1VC.swift */; };
 		0462571A2592D5DC00428DA5 /* SecondViewTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046257192592D5DC00428DA5 /* SecondViewTransitionVC.swift */; };
 		04625721259324EF00428DA5 /* CollectionViewFlowLayoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04625720259324EF00428DA5 /* CollectionViewFlowLayoutVC.swift */; };
 		0462572C259342E500428DA5 /* BasicCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462572B259342E500428DA5 /* BasicCollectionViewController.swift */; };
@@ -30,6 +37,11 @@
 
 /* Begin PBXFileReference section */
 		045E37E72595D72E0003A4A9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		045F377D25A2AA8F007BD29C /* KeyFrameAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimationVC.swift; sourceTree = "<group>"; };
+		045F378025A2BBB8007BD29C /* KeyFrameAnimPathVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimPathVC.swift; sourceTree = "<group>"; };
+		045F378325A2E664007BD29C /* VirtualPropertyAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualPropertyAnimationVC.swift; sourceTree = "<group>"; };
+		045F378625A2F4BC007BD29C /* GroupAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAnimationVC.swift; sourceTree = "<group>"; };
+		045F378925A2FBF5007BD29C /* TransitionAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationVC.swift; sourceTree = "<group>"; };
 		04618796259C16810017C530 /* Transform3DCubeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform3DCubeVC.swift; sourceTree = "<group>"; };
 		04618799259C55280017C530 /* ReplicatorLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicatorLayerVC.swift; sourceTree = "<group>"; };
 		0461879C259C71DD0017C530 /* DefaultAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAnimationVC.swift; sourceTree = "<group>"; };
@@ -37,6 +49,8 @@
 		046245C2259D6A4100A5F98D /* PresentionLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentionLayerViewController.swift; sourceTree = "<group>"; };
 		046245C5259D784F00A5F98D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		046245CC259D7F5E00A5F98D /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		046245CF259DC1A000A5F98D /* LayerAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerAboutViewController.swift; sourceTree = "<group>"; };
+		046245D3259DCAA200A5F98D /* Animation1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation1VC.swift; sourceTree = "<group>"; };
 		046257192592D5DC00428DA5 /* SecondViewTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewTransitionVC.swift; sourceTree = "<group>"; };
 		04625720259324EF00428DA5 /* CollectionViewFlowLayoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayoutVC.swift; sourceTree = "<group>"; };
 		0462572B259342E500428DA5 /* BasicCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCollectionViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +77,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046245D2259DCA3B00A5F98D /* LayerAbout */ = {
+			isa = PBXGroup;
+			children = (
+				046245CF259DC1A000A5F98D /* LayerAboutViewController.swift */,
+				0467BFF6259B29D70099A414 /* Transform3DViewController.swift */,
+				04618796259C16810017C530 /* Transform3DCubeVC.swift */,
+				04618799259C55280017C530 /* ReplicatorLayerVC.swift */,
+				0461879C259C71DD0017C530 /* DefaultAnimationVC.swift */,
+				0461879F259C82820017C530 /* TransitionLayerVC.swift */,
+				046245C2259D6A4100A5F98D /* PresentionLayerViewController.swift */,
+				046245D3259DCAA200A5F98D /* Animation1VC.swift */,
+				045F377D25A2AA8F007BD29C /* KeyFrameAnimationVC.swift */,
+				045F378025A2BBB8007BD29C /* KeyFrameAnimPathVC.swift */,
+				045F378325A2E664007BD29C /* VirtualPropertyAnimationVC.swift */,
+				045F378625A2F4BC007BD29C /* GroupAnimationVC.swift */,
+				045F378925A2FBF5007BD29C /* TransitionAnimationVC.swift */,
+			);
+			name = LayerAbout;
+			sourceTree = "<group>";
+		};
 		04646CBC2590A0E7007FFED3 = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +123,7 @@
 				046257192592D5DC00428DA5 /* SecondViewTransitionVC.swift */,
 				04625720259324EF00428DA5 /* CollectionViewFlowLayoutVC.swift */,
 				0462572B259342E500428DA5 /* BasicCollectionViewController.swift */,
-				0467BFF6259B29D70099A414 /* Transform3DViewController.swift */,
-				04618796259C16810017C530 /* Transform3DCubeVC.swift */,
-				04618799259C55280017C530 /* ReplicatorLayerVC.swift */,
-				0461879C259C71DD0017C530 /* DefaultAnimationVC.swift */,
-				0461879F259C82820017C530 /* TransitionLayerVC.swift */,
-				046245C2259D6A4100A5F98D /* PresentionLayerViewController.swift */,
+				046245D2259DCA3B00A5F98D /* LayerAbout */,
 				045E37E72595D72E0003A4A9 /* UIView+Extension.swift */,
 				046245C5259D784F00A5F98D /* UIColor+Extension.swift */,
 				046245CC259D7F5E00A5F98D /* CALayer+Extension.swift */,
@@ -178,18 +207,25 @@
 			files = (
 				04646CE22590ADDD007FFED3 /* ViewTransitionVC.swift in Sources */,
 				0467BFF7259B29D70099A414 /* Transform3DViewController.swift in Sources */,
+				045F378425A2E664007BD29C /* VirtualPropertyAnimationVC.swift in Sources */,
 				0462571A2592D5DC00428DA5 /* SecondViewTransitionVC.swift in Sources */,
+				045F377E25A2AA8F007BD29C /* KeyFrameAnimationVC.swift in Sources */,
+				046245D4259DCAA200A5F98D /* Animation1VC.swift in Sources */,
 				045E37E82595D72E0003A4A9 /* UIView+Extension.swift in Sources */,
 				046187A0259C82820017C530 /* TransitionLayerVC.swift in Sources */,
 				04646CDE2590A107007FFED3 /* HomeTableViewController.swift in Sources */,
 				04618797259C16810017C530 /* Transform3DCubeVC.swift in Sources */,
 				0461879A259C55280017C530 /* ReplicatorLayerVC.swift in Sources */,
+				045F378125A2BBB8007BD29C /* KeyFrameAnimPathVC.swift in Sources */,
 				04646CC92590A0E7007FFED3 /* AppDelegate.swift in Sources */,
 				046245C6259D784F00A5F98D /* UIColor+Extension.swift in Sources */,
 				046245C3259D6A4100A5F98D /* PresentionLayerViewController.swift in Sources */,
+				045F378725A2F4BC007BD29C /* GroupAnimationVC.swift in Sources */,
 				046245CD259D7F5E00A5F98D /* CALayer+Extension.swift in Sources */,
+				045F378A25A2FBF5007BD29C /* TransitionAnimationVC.swift in Sources */,
 				04625721259324EF00428DA5 /* CollectionViewFlowLayoutVC.swift in Sources */,
 				0461879D259C71DD0017C530 /* DefaultAnimationVC.swift in Sources */,
+				046245D0259DC1A000A5F98D /* LayerAboutViewController.swift in Sources */,
 				0462572C259342E500428DA5 /* BasicCollectionViewController.swift in Sources */,
 				04646CCB2590A0E7007FFED3 /* SceneDelegate.swift in Sources */,
 			);
